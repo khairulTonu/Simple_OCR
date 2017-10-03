@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.tonu.uploadimage.MainActivity">
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    >
+
+    <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:scaleType="centerInside"
+            android:id="@+id/imgView"
+            />
+        <Button
+            android:id="@+id/buttonLoadPicture"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="0"
+            android:onClick="loadImagefromGallery"
+            android:text="Load Picture" >
+        </Button>
+
+        <Button
+            android:layout_below="@+id/buttonLoadPicture"
+            android:foregroundGravity="center_horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="PROCESS"
+            android:scaleType="centerInside"
+            android:id="@+id/btn_process"
+            />
+        <Button
+            android:layout_below="@+id/btn_process"
+            android:foregroundGravity="center_horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Next Page"
+            android:scaleType="centerInside"
+            android:id="@+id/btn_next"
+            />
+        <TextView
+            android:layout_below="@+id/btn_process"
+            android:foregroundGravity="center_horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="NO TEXT"
+            android:textSize="18sp"
+            android:scaleType="centerInside"
+            android:id="@+id/textview_result"
+            />
+
+
+        </LinearLayout>
+    </ScrollView>
+</android.support.constraint.ConstraintLayout>
